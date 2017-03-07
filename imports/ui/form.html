@@ -1,0 +1,16 @@
+<template name="form">
+    <label class="hide-completed">
+        <input type="checkbox" />
+        Hide Completed Tasks
+    </label>
+    
+    {{> loginButtons}}
+    
+    {{#if currentUser}}
+        <form class="new-task">
+          <input type="text" name="text" placeholder="Type to add new tasks" />
+          <input type="text" name="color" placeholder="Name of a color" />
+          <input type="submit">
+        </form>
+    {{/if}}
+</template>

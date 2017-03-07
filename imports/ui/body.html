@@ -1,0 +1,14 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Shared list try some different things ({{incompleteCount}})</h1>
+      {{> form}}
+    </header>
+ 
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
